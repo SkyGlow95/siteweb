@@ -321,6 +321,7 @@ header {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   background-color: #eeeeee;
+  max-height: 750px;
 }
 .test3 img {
   width: 100%;
