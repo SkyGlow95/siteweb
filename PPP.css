@@ -408,6 +408,11 @@ header {
     transition: all 0.8s ease;
   }
 }
+@media screen and (min-width: 480px) {
+  .competences {
+    max-height: 750px;
+  }
+}
 
 
 /*--CONTACT--*/
