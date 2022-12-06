@@ -90,6 +90,14 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+  .nav .menuh{
+    cursor: pointer!important;
+    position: absolute!important;
+    top: 15px!important;
+    right: 15px!important;
+    width: 45px!important;
+    display: block!important;
+  }
   .navMenu a {
     display: block;
     text-align: center;
@@ -110,16 +118,14 @@ header {
     padding-top: 200px;
     padding-bottom: 100%;
   }
+  .nav {
+    height: 70px;
+  }
+  .nav.mobile-menu {
+    height: auto;
+  }
   .navMenu.mobile-menu {
     margin-left: 0;
-  }
-  .nav .menuh{
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 45px;
-    display: block;
   }
 
   .card .content p{
@@ -181,6 +187,9 @@ header {
   transform: translateY(0px);
   animation: slideUp 2.5s ease-in-out;
 }
+.buttond:hover {
+  background-color: #00536e;
+}
 
 @keyframes slideUp {
   0% {
@@ -189,14 +198,6 @@ header {
   100% {
     transform: translateY(0px);
   }
-}
-
-.contactlogo a {
-  display:inline-block;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 190px;
-  margin-top: 190px;
 }
 
 .reveal {
@@ -209,6 +210,32 @@ header {
   transform: translateX(0);
   transition: 1s cubic-bezier(.17,.67,.38,.88);
 }
+
+.pres {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+.pres .yann {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 100%;
+  outline: 10px solid #008CBA;
+  border: 10px solid white;
+}
+.pres .fleche {
+  width: 50px;
+  height: 50px;
+}
+.pres p{
+  text-align: center;
+  float: right;
+  margin-left: 20px ;
+}
+
 
 .experiences {
   margin: 0;
@@ -233,11 +260,11 @@ header {
   cursor: pointer;
 }
 .annee button:hover {
-  background-color: blue !important;
+  background-color: #008CBA !important;
 }
 #bttn {
   transition: .5s;
-  background-color: blue;
+  background-color: #008CBA;
 }
 #bttnr {
   transition: .5s;
@@ -247,51 +274,44 @@ header {
   transition: .5s;
   background-color: white;
 }
+.tableauc img{
+  width: 15%;
+  height: 15%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.tableauc p{
+  text-align: center;
+}
 #bdr {
   display: block;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
-}
-#bdr p{
-  text-align: center;
 }
 #bdrs {
-  display: none;
-  background-color: #eeeeee;
+  display: block;
+  background-color: #ffffff;
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
-}
-#bdrs p{
-  text-align: center;
 }
 #bdrr {
-  display: none;
-  background-color: #eeeeee;
+  display: block;
+  background-color: #ffffff;
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
-}
-#bdrr p{
-  text-align: center;
-}
-.titre1 {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  color: #008CBA;
-  line-height: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -316,12 +336,12 @@ header {
 .sep2 {
   height: 5px;
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: #008CBA;
   border-radius: 5px;
 }
 .slider{
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   max-width: 1100px;
   display: flex;
@@ -333,6 +353,9 @@ header {
   border-radius: 20px;
   padding-top: 25px;
   padding-bottom: 15px;
+}
+.slider .card:hover {
+  zoom: 1.1;
 }
 .slider .card .img{
   height: 100px;
@@ -387,9 +410,16 @@ header {
 
 
 /*--CONTACT--*/
+.titre3 {
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-top: 80px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
 .contact{
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   display: flex;
   width: 100%;
   background-color: #ffffff;
@@ -410,90 +440,52 @@ header {
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.contact .carte .titre1 {
-  font-size: 40px;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  transition: all 0.5s ease;
-  color: black;
+.contact1 {
+  width: 49%;
+  border-radius: 15px;
+  float: right;
+  background-color: #eeeeee;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.buttonc {
-  margin-left: 20px;
-  border-radius: 4px;
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 15px 40px;
+.contact1 p {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.contact1 a {
+  color: #000;
+  padding-top: 48px;
+  height: 110px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  outline: none;
 }
-.btnsc {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact1:hover {
+  background-color: #008CBA;
+  transition: .2s;
 }
-.contact form {
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.contact1 a:hover {
+  color: white;
+  transition: .2s;
 }
-.contact form input {
-  width: 47%;
-  margin: 10px 0;
-  padding: 10px;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #e4e4ec;
-  transition: all 0.5s ease;
-}
-.contact form input:hover,
-.contact form textarea:hover {
-  border-bottom: 2px solid #008CBA;
-}
-.contact form textarea {
-  width: 100%;
-  height: 100px;
-  margin: 10px 0;
-  padding: 10px;
-  margin-bottom: 105px;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #e4e4ec;
-  transition: 0.2s;
-  resize: none;
-  transition: all 0.5s ease;
+.contact a img {
+  margin-top: -50px;
+  width: 40px;
+  height: 40px;
 }
 @media screen and (max-width: 800px) {
-  .contact form input {
-    width: 100%;
-    transition: all 0.5s ease;
-  }
-  .contact .carte .titre1 {
-    font-size: 25px;
-    transition: all 0.5s ease;
-  }
-  .contact form textarea {
-    margin-bottom: 40px;
-    transition: all 0.5s ease;
-  }
   .contact iframe {
     display: none;
     transition: all 0.5s ease;
   }
-  .btnsc {
-    margin-bottom: 17px;
+  .contact1 {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
+}
+
+footer p {
+  color: #9d9d9d;
 }
