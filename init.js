@@ -14,11 +14,50 @@ const handleIntersect = function (entries, observer) {
 		}
 	})
 }
-
 const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('.reveal').forEach(function(r) {
 	observer.observe(r)
 })
+
+const handleIntersect2 = function (entries, observer) {
+	entries.forEach(function (entry) {
+		if (entry.intersectionRatio > ratio) {
+			entry.target.classList.add('reveal-visible2')
+			observer.unobserve(entry.target)
+		}
+	})
+}
+const observer2 = new IntersectionObserver(handleIntersect2, options);
+document.querySelectorAll('.reveal2').forEach(function(r) {
+	observer2.observe(r)
+})
+
+const handleIntersect3 = function (entries, observer) {
+	entries.forEach(function (entry) {
+		if (entry.intersectionRatio > ratio) {
+			entry.target.classList.add('reveal-visible3')
+			observer.unobserve(entry.target)
+		}
+	})
+}
+const observer3 = new IntersectionObserver(handleIntersect3, options);
+document.querySelectorAll('.reveal3').forEach(function(r) {
+	observer3.observe(r)
+})
+
+const handleIntersect4 = function (entries, observer) {
+	entries.forEach(function (entry) {
+		if (entry.intersectionRatio > ratio) {
+			entry.target.classList.add('reveal-visible4')
+			observer.unobserve(entry.target)
+		}
+	})
+}
+const observer4 = new IntersectionObserver(handleIntersect4, options);
+document.querySelectorAll('.reveal4').forEach(function(r) {
+	observer4.observe(r)
+})
+
 
 /*--Menu--*/
 const menuHamburger = document.querySelector(".menuh")
@@ -41,6 +80,7 @@ navLinks.classList.toggle('mobile-menu')
 menua.addEventListener('click',()=>{
 nav.classList.toggle('mobile-menu')
 })
+
 
 /*--Expériences--*/
 const bttn = document.getElementById('bttn')
@@ -81,7 +121,7 @@ $(document).ready(function() { /*--créer une fonction pour la page--*/
 	});
 window.addEventListener("load", () => { /*--quand la page load--*/
 	document.getElementById("bdrr").style.display = "none"; /*--récupérer l'élément et changer sont style--*/
-	document.getElementById("bdrs").style.display = "none";
+	document.getElementById("bdr").style.display = "none";
 });
 
 /*--Compétences--*/
@@ -90,4 +130,6 @@ $(".slider").owlCarousel({ /*--appel de l'élément slider pour définir des att
 	autoplay: true,
 	autoplayTimeout: 2000, //2000ms = 2s;
 	autoplayHoverPause: true,
+	nav: false,
+	dots: false,
 });
