@@ -47,18 +47,18 @@ const bttn = document.getElementById('bttn')
 const bttnr = document.getElementById('bttnr')
 const bttns = document.getElementById('bttns')
 function Click() {
-	bttnr.style.backgroundColor = 'white'
-	bttns.style.backgroundColor = 'white'
+	bttnr.style.backgroundColor = '#eeeeee'
+	bttns.style.backgroundColor = '#eeeeee'
 	bttn.style.backgroundColor = '#008CBA'
 }
 function leftClick() {
-	bttn.style.backgroundColor = 'white'
-	bttns.style.backgroundColor = 'white'
+	bttn.style.backgroundColor = '#eeeeee'
+	bttns.style.backgroundColor = '#eeeeee'
 	bttnr.style.backgroundColor = '#008CBA'
 }
 function rightClick() {
-	bttnr.style.backgroundColor = 'white'
-	bttn.style.backgroundColor = 'white'
+	bttnr.style.backgroundColor = '#eeeeee'
+	bttn.style.backgroundColor = '#eeeeee'
 	bttns.style.backgroundColor = '#008CBA'
 }
 /*--$(allias de jQuery)--*/
