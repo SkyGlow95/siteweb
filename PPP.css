@@ -563,6 +563,14 @@ header {
 }
 .carte1 p {
   padding-right: 50px;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (orientation: portrait) {
+  .carte1 p {
+    font-size: 1em;
+  }
 }
 
 
