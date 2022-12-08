@@ -230,16 +230,19 @@ header {
   background-color: #00536e;
 }
 @media (orientation:portrait) {
+  .intro {
+    height: 100%;
+  }
   .texte1 h1 {
-    padding-top: 90%;
+    padding-top: 60%;
     font-size: 4em;
   }
   .texte1 p {
     font-size: 2em;
   }
   .buttond {
-    margin-top: 30%;
-    margin-bottom: 70%;
+    margin-top: 50%;
+    margin-bottom: 50%;
     padding-top: 30px;
     width: 50%;
     height: 100px;
@@ -319,7 +322,7 @@ header {
   color: white;
 }
 .pres p {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 /*--EXPERIENCES--*/
